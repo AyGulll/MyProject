@@ -19,6 +19,8 @@ public class Login {
            profil.click();
            WebElement login=driver.findElement(By.xpath("//font[contains(text(),'Hesab yarat')]"));
            login.click();
+           WebElement button=driver.findElement(By.xpath(""));
+           button.click();
        }
 
 }
