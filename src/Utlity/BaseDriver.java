@@ -16,6 +16,7 @@ public class BaseDriver {
     public static void BekleVeKapat(){
         MyFunc.Bekle(5);
         driver.quit();
+        driver.close();
     }
 
 }
