@@ -1,4 +1,4 @@
-package Utlity;
+package Utility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,7 +14,7 @@ public class BaseDriver {
         wait = (WebDriver) new WebDriverWait(driver, Duration.ofSeconds(20));
     }
     public static void BekleVeKapat(){
-        MyFunc.Bekle(5);
+        MyFunction.Bekle(5);
         driver.quit();
         driver.close();
     }

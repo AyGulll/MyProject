@@ -1,7 +1,7 @@
 package Rossmann;
 
-import Utlity.BaseDriver;
-import Utlity.MyFunc;
+import Utility.BaseDriver;
+import Utility.MyFunction;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +20,7 @@ public class Login extends BaseDriver {
            driver=new ChromeDriver();
            driver.get("https://www.rossmann.pl/");
            driver.manage().window().maximize();
-           MyFunc.Bekle(2);
+           MyFunction.Bekle(2);
            WebElement profil=driver.findElement(By.xpath("//span[normalize-space()='Profil']"));
            profil.click();
            WebElement login=driver.findElement(By.xpath("//font[contains(text(),'Hesab yarat')]"));
